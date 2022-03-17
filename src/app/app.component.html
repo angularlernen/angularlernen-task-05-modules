@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="row">
+		<div class="col d-flex justify-content-center">
+			<app-profile-picture 
+        pictureUrl="https://randomuser.me/api/portraits/men/55.jpg"
+        profileName="Mike"
+        (profilePictureClicked)="profileSelected($event)"
+        diameter="200" 
+        frameWidth="12" 
+        frameColor="red"
+			  borderColor="white">
+			</app-profile-picture>
+		</div>
+		<div class="col d-flex justify-content-center">
+			<app-profile-picture 
+        pictureUrl="https://randomuser.me/api/portraits/men/52.jpg"
+        profileName="Malte"
+        (profilePictureClicked)="profileSelected($event)"
+        diameter="80" 
+        frameWidth="8">
+			</app-profile-picture>
+		</div>
+		<div class="col d-flex justify-content-center">
+			<app-profile-picture
+        profileName="Susi"
+        (profilePictureClicked)="profileSelected($event)"
+        pictureUrl="https://randomuser.me/api/portraits/women/54.jpg" 
+        diameter="120" 
+        frameWidth="2">
+			</app-profile-picture>
+		</div>
+	</div>
+</div>
